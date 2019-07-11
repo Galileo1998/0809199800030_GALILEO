@@ -70,7 +70,7 @@ function agregarNuevoPlugin($dscplugin, $estplugin, $urlplugin, $cdnplugin) {
       }
 }
 
-function modificarJuguete($dscplugin, $estplugin, $urlplugin, $cdnplugin, $idplugin)
+function modificarPlugin($dscplugin, $estplugin, $urlplugin, $cdnplugin, $idplugin)
 {
     $updSQL = "UPDATE plugins set efggm_plugin='%s', efggm_estado='%s',
     efggm_urlhomepage='%s', efggm_urlcdn='%s' where efggm_idplugins=%d;";

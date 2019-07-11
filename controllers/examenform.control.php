@@ -90,7 +90,7 @@
               }
               break;
           case 'UPD':
-              $viewData["modeDsc"] = $modeDesc[$mode] . $viewData["dscjuguete"];
+              $viewData["modeDsc"] = $modeDesc[$mode] . $viewData["dscplugin"];
               if (modificarPlugin(
                   $viewData["dscplugin"],
                   $viewData["estplugin"],

@@ -13,27 +13,31 @@
   <input type="hidden" name="mode" value="{{mode}}"/>
   <input type="hidden" name="xcfrt" value="{{xcfrt}}" />
   <input type="hidden" name="btnConfirmar" value="Confirmar" />
-  {{if showIdJuguetes}}
+  {{if showIdPlugins}}
   <fieldset class="row">
-    <label class="col-5" for="idjuguetes">Código de Juguete</label>
-    <input type="text" name="idjuguetes" id="idjuguetes" readonly value="{{idjuguetes}}" class="col-7" />
+    <label class="col-5" for="efggm_idplugins">Código de Plugin</label>
+    <input type="text" name="efggm_idplugins" id="efggm_idplugins" readonly value="{{efggm_idplugins}}" class="col-7" />
   </fieldset>
-  {{endif showIdJuguetes}}
+  {{endif showIdPlugins}}
   <fieldset class="row">
-    <label class="col-5" for="dscjuguete">Nombre: </label>
-    <input type="text" name="dscjuguete" id="dscjuguete" {{readonly}} value="{{nomjuguete}}" class="col-7" />
-  </fieldset>
-  <fieldset class="row">
-    <label class="col-5" for="precjuguete">Precio de Venta</label>
-    <input type="text" name="precjuguete" id="precjuguete" {{readonly}} value="{{preciojuguete}}" class="col-7" />
+    <label class="col-5" for="dscplugin">Nombre Plugin: </label>
+    <input type="text" name="dscplugin" id="dscplugin" {{readonly}} value="{{efggm_plugin}}" class="col-7" />
   </fieldset>
   <fieldset class="row">
-    <label class="col-5" for="estjuguete">Estado</label>
-    <select name="estjuguete" id="estjuguete" class="col-7" {{selectDisable}} {{readonly}} >
-      {{foreach estadoJuguetes}}
+    <label class="col-5" for="estplugin">Estado: </label>
+    <select name="estplugin" id="estplugin" class="col-7" {{selectDisable}} {{readonly}} >
+      {{foreach estadoPlugins}}
         <option value="{{cod}}" {{selected}}>{{dsc}}</option>
-      {{endfor estadoJuguetes}}
+      {{endfor estadoPlugins}}
     </select>
+  </fieldset>
+  <fieldset class="row">
+    <label class="col-5" for="urlplugin">URL Homepage: </label>
+    <input type="text" name="urlplugin" id="urlplugin" {{readonly}} value="{{efggm_urlhomepage}}" class="col-7" />
+  </fieldset>
+  <fieldset class="row">
+    <label class="col-5" for="cdnplugin">URL CDN: </label>
+    <input type="text" name="cdnplugin" id="cdnplugin" {{readonly}} value="{{efggm_urlcdn}}" class="col-7" />
   </fieldset>
   <fieldset class="row">
     <div class="right">
